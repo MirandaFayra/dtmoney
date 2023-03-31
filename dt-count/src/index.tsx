@@ -14,7 +14,7 @@ createServer({
         {
           id: 1,
           title: 'Aluguel',
-          amount: '4000',
+          amount: '500',
           type: 'withdraw',
           category: 'Casa',
           createdAt: new Date('2021-01-02'),
@@ -23,7 +23,7 @@ createServer({
         {
           id: 2,
           title: 'Frelance de Website ',
-          amount: '60000',
+          amount: '1000',
           type: 'deposit',
           category: 'Dev',
           createdAt: new Date('2021-01-07'),
@@ -35,8 +35,12 @@ createServer({
   routes() {
     this.namespace = 'api';
 
-    this.get('transactions', (schema) => {
+    /*this.get('transactions', (schema) => {
       return schema.db.transactions;
+    });*/
+
+    this.get('transactions', (schema) => {
+      return schema.all('transaction')
     });
 
     this.post('/transactions', (schema, request) => {
