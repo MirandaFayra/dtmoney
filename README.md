@@ -62,7 +62,10 @@ Este é um projeto  Front-end, cujo o intuito é estudar mais alguns tópicos do
 ## ✅ O Projeto 
 
 
-https://github.com/MirandaFayra/dtmoney/assets/52434685/b637a152-f470-462d-9ca0-99a0c0e2141c
+
+https://github.com/MirandaFayra/dtmoney/assets/52434685/8ecc9650-d805-4ae7-b7f7-036b67cb33ae
+
+
 
 
 <br>
