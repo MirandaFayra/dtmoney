@@ -1,11 +1,11 @@
 import { useContext} from "react";
-import { TransactionsContext } from "../../TransactionContex";
+import { useTransaction } from "../../hooks/useTransaction";
 import { ContainerTransition } from "./styles";
 
 
 export function TransitionTables() {
 
- const {transactions} = useContext(TransactionsContext)
+ const {transactions} = useTransaction()
 
     return (
       <ContainerTransition>
@@ -18,7 +18,7 @@ export function TransitionTables() {
               <th> Data </th>
             </tr>
           </thead>
-          <tbody>
+            <tbody>
               {
                 transactions.map(transaction=>{
                   return (
@@ -40,6 +40,10 @@ export function TransitionTables() {
                   )
                 })
               }
+            
+
+   
+
             </tbody>
 
         </table>

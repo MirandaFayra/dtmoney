@@ -5,11 +5,11 @@ export const ContainerTransition = styled.div `
 
     table{
         width: 100%;
-        border-spacing:0.5 rem;
+        border-spacing:0.5rem;
     }
 
     th{
-        color:#969CB2;
+        color:var(--texts-body);
         font-weight:400;
         padding: 1rem 2rem;
         text-align: left;
@@ -21,7 +21,7 @@ export const ContainerTransition = styled.div `
         border:0;
         background:var(--shape);
         font-weight:400;
-        color:#969CB2;
+        color:var(--texts-body);
         border-radius: 0.25rem;
 
         &:first-child{
@@ -29,7 +29,7 @@ export const ContainerTransition = styled.div `
         }
 
         &.deposit{
-            color:#33CC95;
+            color:var(--green);
         }
 
         &.withdraw{

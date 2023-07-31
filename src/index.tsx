@@ -14,7 +14,7 @@ createServer({
         {
           id: 1,
           title: 'Aluguel',
-          amount: '500',
+          amount: 500,
           type: 'withdraw',
           category: 'Casa',
           createdAt: new Date('2021-01-02'),
@@ -23,7 +23,7 @@ createServer({
         {
           id: 2,
           title: 'Frelance de Website ',
-          amount: '1000',
+          amount: 1000,
           type: 'deposit',
           category: 'Dev',
           createdAt: new Date('2021-01-07'),

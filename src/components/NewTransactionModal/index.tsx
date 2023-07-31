@@ -1,12 +1,12 @@
 import { FormEvent, useState, useContext } from 'react'
 import Modal from 'react-modal'
-import { TransactionsContext } from '../../TransactionContex'
 
 import closeImg from '../../assets/close.svg'
 import incomeImg from '../../assets/entradas.svg'
 import outImg from '../../assets/saidas.svg'
 
 import { ContainerNewTransactionModal, RadioBox, TransactionTypeContainer } from './style';
+import { useTransaction } from '../../hooks/useTransaction'
 
 
 interface NewTransactionModalProps {
@@ -15,12 +15,12 @@ interface NewTransactionModalProps {
 }
 
 export function NewTransactionModal ({isOpen,onRequestClose}:NewTransactionModalProps){
-  const {createTransaction} = useContext(TransactionsContext)
+  const {createTransaction} = useTransaction()
 
   const [title,setTitle] = useState('')
   const [amount, setAmount] = useState(0)
   const [category, setCategory] = useState('')
-  const [type, setType] = useState('deposit')
+  const [type, setType] =useState('deposit')
   
   async function handleCreateNewTransaction(event:FormEvent){
     event.preventDefault()
@@ -59,7 +59,7 @@ export function NewTransactionModal ({isOpen,onRequestClose}:NewTransactionModal
           </button>
 
           <ContainerNewTransactionModal onSubmit={handleCreateNewTransaction}> 
-            <h2> Cadastrar transação</h2>
+            <h2> Cadatrar transação</h2>
             <input
                 placeholder='Título'
                 value={title}
