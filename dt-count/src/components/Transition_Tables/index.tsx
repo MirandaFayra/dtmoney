@@ -18,7 +18,7 @@ export function TransitionTables() {
               <th> Data </th>
             </tr>
           </thead>
-            <tbody>
+          <tbody>
               {
                 transactions.map(transaction=>{
                   return (
@@ -40,10 +40,6 @@ export function TransitionTables() {
                   )
                 })
               }
-            
-
-   
-
             </tbody>
 
         </table>
