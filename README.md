@@ -14,7 +14,10 @@
 <p> Aplicação cujo o intuito é registrar a entrada e saída de capital financeiro, permitindo assim maior controle. </p>
 
 <br>
+
 ---
+<br>
+
 
 ##  📲 Tecnologias Usadas
 
