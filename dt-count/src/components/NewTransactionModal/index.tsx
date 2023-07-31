@@ -20,7 +20,7 @@ export function NewTransactionModal ({isOpen,onRequestClose}:NewTransactionModal
   const [title,setTitle] = useState('')
   const [amount, setAmount] = useState(0)
   const [category, setCategory] = useState('')
-  const [type, setType] =useState('deposit')
+  const [type, setType] = useState('deposit')
   
   async function handleCreateNewTransaction(event:FormEvent){
     event.preventDefault()
@@ -59,7 +59,7 @@ export function NewTransactionModal ({isOpen,onRequestClose}:NewTransactionModal
           </button>
 
           <ContainerNewTransactionModal onSubmit={handleCreateNewTransaction}> 
-            <h2> Cadatrar transação</h2>
+            <h2> Cadastrar transação</h2>
             <input
                 placeholder='Título'
                 value={title}
