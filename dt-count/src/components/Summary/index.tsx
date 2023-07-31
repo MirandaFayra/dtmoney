@@ -2,20 +2,18 @@ import { SummaryContainer } from "./styles";
 import entradas from '../../assets/entradas.svg'
 import saidas from '../../assets/saidas.svg'
 import totalImg from '../../assets/total.svg'
-import { TransactionsContext } from "../../TransactionContex";
-import { useContext } from "react";
-
+import { useTransaction } from "../../hooks/useTransaction";
 
 export function Summary() {
 
-  const {transactions} = useContext(TransactionsContext)
+  const {transactions} = useTransaction()
   const summary = transactions.reduce((acc, transaction) =>{
     if(transaction.type === 'deposit'){
-      const montanteTransacaoNumero = Number(transaction.amount)
+      const montanteTransacao = transaction.amount
       //Estamos somando o número dos valores de depósito
-      acc.deposits += montanteTransacaoNumero
+      acc.deposits += montanteTransacao
       //Se for um deposito, vamos somar do total 
-      acc.total += montanteTransacaoNumero
+      acc.total += montanteTransacao
     } else{
       // Estamos somando o  número de saques
       acc.withdraws += transaction.amount
