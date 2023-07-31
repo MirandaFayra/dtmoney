@@ -1,6 +1,7 @@
 
-![Full stack Developer (4)](https://github.com/MirandaFayra/dtmoney/assets/52434685/5de8735d-64d9-4889-9528-1256da904505)
+![Full stack Developer (5)](https://github.com/MirandaFayra/dtmoney/assets/52434685/a083a143-87d0-4de6-a0eb-779eb268b5fb)
 
+<br>
 
 <h4 align="left">
     Registrando suas finanças .
